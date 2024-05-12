@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/app/public/style.css"></link>
+  <script src="admin.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: yellowgreen;
+  background-image: url('fodos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  </style>
+</head>
+<style>
+  /* Estilos para la página admin.html */
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* Ajuste para el navbar fijo */
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.centered-carousel {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">  <img src="imagenes/OIP (1).jpg" alt="LOGO"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="admin.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="turnos">TURNOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Diagramas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Contexto</a></li>
+              <li><a class="dropdown-item" href="#">Nivel 1</a></li>
+              <li><a class="dropdown-item" href="#">Edentidad Relacion</a></li>
+              <li><a class="dropdown-item" href="#">Caso de uso</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <form class="d-flex me-2" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <button id="logoutButton" class="btn btn-danger">Cerrar sesión</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-4">
+    <h1><strong>Programa Provincial de ITS VIH/SIDA y Hepatitis Virales</strong></h1>
+    <p>La entidad a analizar es el Programa Provincial de ITS VIH/SIDA y Hepatitis Virales. Se encarga de la gestión de medicamentos, estudios especiales, uso y recursos de los medicamentos. 
+      Lleva adelante la tarea de prevención de las Enfermedades de Transmisión Sexual, y la promoción de información orientada tal fin.  
+      Es una entidad que aborda a los pacientes con VIH/Sida de toda la provincia, desarrollando consejería pre-test y post-test VIH. Además, se encarga del seguimiento de los mismos. 
+      Por otra parte, el Programa actúa como dispensa de preservativos a las distintas instituciones, bregando por la disponibilidad de los mismos en cada centro de salud, mediante la realización de auditorías. 
+      Desde otra óptica, esta institución colabora con Sociedades Científicas, Instituciones Universitarias, y de Investigación.  
+      Realiza actividades de capacitación las temáticas descriptas, en diversos organismos, fundaciones, instituciones, entre otros. 
+      En suma, abarca un total de 600 pacientes en toda la provincia.
+    </p>
+
+    <div class="centered-carousel">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="lugar (1).png" class="d-block w-50" alt="complejo">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/lugar (2).png" class="d-block w-50" alt="ubicaion">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/fondo.jpg" class="d-block w-50" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+     
+  <div class="row">
+   
+   <div class="col" style="background-color: rgb(128, 0, 128);"><strong>OBJETIVOS</strong></div>
+  
+
+
+</div>
+<div class="row">
+  <div class="col" style="background-color: green;"><div class="card-group">
+   <div class="card">
+     <img src="imagenes/comunicación.jpeg" class="card-img-top" alt="imagen de comunicaion">
+     <div class="card-body">
+       <h5 class="card-title"><strong>Comunicaciòn deficiente</strong></h5>
+       <p class="card-text"> Para resolver este problema, se propone implementar herramientas de comunicación efectivas, como
+        plataformas de mensajería instantánea y sistemas de gestión de proyectos. Además, se busca establecer
+        pautas claras de comunicación, roles y responsabilidades, y fomentar la comunicación abierta a través de
+        reuniones regulares.</p>
+       <p class="card-text"><small class="text-muted"></small></p>
+     </div>
+   </div>
+   <div class="card">
+     <img src="imagenes/problemas.jpeg" class="card-img-top" alt="imagen de problema">
+     <div class="card-body">
+       <h5 class="card-title"><strong>Problemas de seguimiento a pacientes</strong></h5>
+       <p class="card-text">Aquí, se propone la implementación de un sistema de gestión de registros médicos electrónicos para
+        acceder de manera rápida y segura a la información de los pacientes. También se sugiere utilizar
+        tecnologías de seguimiento remoto, como dispositivos portátiles o aplicaciones móviles, para permitir a
+        los pacientes registrar y monitorear su progreso y compartirlo con sus médicos</p>
+       <p class="card-text"><small class="text-muted"></small></p>
+     </div>
+   </div>
+   <div class="card">
+     <img src="imagenes/inexistencia.jpeg" class="card-img-top" alt="enexistencia">
+     <div class="card-body">
+       <h5 class="card-title"><strong>Inexistencia de un sistema unificado de información</strong></h5>
+       <p class="card-text">Para abordar esta carencia, se busca desarrollar e implementar un sistema unificado de información que
+        permita a diferentes departamentos compartir datos de manera segura y eficiente. Se enfatiza la
+        importancia de establecer estándares y protocolos de interoperabilidad y capacitar al personal en su uso
+        adecuado.</p>
+       <p class="card-text"><small class="text-muted"></small></p>
+     </div>
+   </div>
+ </div>
+</div>
+ 
+  </div>
+
+  
+
+
+</div>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

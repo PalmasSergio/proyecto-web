@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitud de Turno</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label,
+    input,
+    button {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #mensaje {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Solicitud de Turno</h1>
+    <form id="turnoForm" action="turno.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+        <button type="submit">Solicitar Turno</button>
+    </form>
+    <div id="mensaje"></div>
+</div>
+<h1>Buscar Turno</h1>
+<form action="buscar_turno.php" method="GET">
+    <label for="turno_id">ID del Turno:</label>
+    <input type="text" id="turno_id" name="turno_id" required>
+    <input type="submit" value="Buscar">
+</form>
+</body>
+</html>
